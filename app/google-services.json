@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1009895843816",
+    "firebase_url": "https://elly4-25cb0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "elly4-25cb0",
+    "storage_bucket": "elly4-25cb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009895843816:android:aed4d2bcf8766eeb96665d",
+        "android_client_info": {
+          "package_name": "com.example.elly31"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009895843816-48mdrfbjaulvqmea3bur1b6u57elrkeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvaJwhMyxhzJZRzuPWfcgFe0gGqccitEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009895843816-48mdrfbjaulvqmea3bur1b6u57elrkeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,8 +9,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".ChoiceActivity"
+            android:exported="false" />
         <activity
             android:name=".UserActivity"
             android:exported="false" />
@@ -35,6 +38,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" /> <!-- поменял местами активити верхнюю и нижнюю -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true">

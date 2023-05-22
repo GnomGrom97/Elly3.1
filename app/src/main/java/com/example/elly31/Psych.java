@@ -1,12 +1,10 @@
 package com.example.elly31;
 
 public class Psych {
-    public String id,name,sec_name,third_name, email,education,password;
 
+    public String id,name,sec_name,third_name,email,education,password;
     public Psych(){
-
     }
-
     public Psych(String id, String  name, String sec_name, String third_name, String email, String education,String password) {
         this.id = id;
         this.name = name;

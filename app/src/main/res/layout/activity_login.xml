@@ -4,40 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/round_back_login"
+    android:visibility="visible"
     tools:context=".LoginActivity">
 
     <Button
-        android:id="@+id/BtnGuest"
+        android:id="@+id/bSignOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
-        android:onClick="OnClickBtnGuest"
-        android:text="Гость"
+        android:onClick="onClickSignOut"
+        android:text="Выйти"
+        android:textColor="#787373"
+        android:background="@drawable/round_back_white30"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bStart"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bStart"
+        app:layout_constraintTop_toBottomOf="@+id/bStart"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/edLogin"
+        android:layout_width="348dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/round_back_white30"
+        android:ems="10"
+
+        android:hint="       Email"
+        android:inputType="textPersonName"
+        android:textColorHint="#787373"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/edPassword1"
+        android:layout_width="353dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_back_white30"
+        android:ems="10"
+        android:hint="          Пароль(минимум 6 символов)"
+        android:inputType="textPersonName"
+        android:textColorHint="#787373"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edLogin" />
+
     <Button
-        android:id="@+id/BtnPsych"
+        android:id="@+id/btnSignUp"
+        android:layout_width="263dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_back_white30"
+        android:onClick="OnClickSignUp"
+        android:text="Зарегистрироваться"
+        android:textColor="#787373"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword1" />
+
+    <Button
+        android:id="@+id/btnSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:onClick="OnClickBtnPsych"
-        android:text="Психолог"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_back_white30"
+        android:onClick="OnClickSignIn"
+        android:text="Войти"
+        android:textColor="#787373"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+    <TextView
+        android:id="@+id/twUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вы вошли как:"
+        android:textColor="#787373"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnGuest" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
 
     <Button
-        android:id="@+id/BtnAdmin"
+        android:id="@+id/bStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Admin"
+        android:layout_marginBottom="484dp"
+        android:background="@drawable/round_back_white30"
+        android:onClick="OnClickStart"
+        android:text="Начать"
+        android:textColor="#787373"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnPsych" />
+        app:layout_constraintTop_toBottomOf="@+id/twUserEmail" />
+
+    <Button
+        android:id="@+id/btnChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickChoice"
+        android:text="Choice"
+        android:background="@drawable/round_back_white30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

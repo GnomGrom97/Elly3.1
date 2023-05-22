@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText edName2, edSecName, edEmail2;
     private String ADMIN_KEY = "User";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        edName2 = findViewById(R.id.edName2);
-        edSecName = findViewById(R.id.edSecName);
-        edEmail2 = findViewById(R.id.edEmail2);
+        edName2 = findViewById(R.id.edName1);
+        edSecName = findViewById(R.id.edSecName1);
+        edEmail2 = findViewById(R.id.edEmail1);
         myDataBase = FirebaseDatabase.getInstance().getReference(ADMIN_KEY);
     }
 
@@ -39,21 +40,19 @@ public class MainActivity extends AppCompatActivity {
         String sec_name2 = edSecName.getText().toString();
         String email2 = edEmail2.getText().toString();
         User2 newUser = new User2(id2, name2, sec_name2, email2); //создание пользователя с атрибутами в ()
-
         if     (!TextUtils.isEmpty(name2) &&
-                !TextUtils.isEmpty(sec_name2)
-                && !TextUtils.isEmpty(email2)){
+                !TextUtils.isEmpty(sec_name2) &&
+                !TextUtils.isEmpty(email2)){
 
         myDataBase.push().setValue(newUser);//отправить информацию о бд -создание пользователя
         Toast.makeText(this, "Пользователь успешно добавлен", Toast.LENGTH_SHORT).show();
         } else {//выдает сообщение о пустом поле
             Toast.makeText(this, "Пустое поле", Toast.LENGTH_SHORT).show();
-
-
-    }}
-
+    }
+    }
     public void OnClickRead(View view) {
-        Intent i = new Intent(MainActivity.this,MainActivityPsych.class);
+        Intent i = new Intent(MainActivity.this,ReadActivity.class);
         startActivity(i);
     }
+
 }

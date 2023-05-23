@@ -40,7 +40,7 @@ public class AdminPsychActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin_psych);
         init();
         getDataFromDB();
-       // setOnClickItem();
+        setOnClickItem();
     }
 
     private void init() {//инициализация чтения бд
@@ -90,10 +90,13 @@ public class AdminPsychActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Psych psych = listTemp.get(position);//получаем по нажатой позиции полностью пользователя
-                Intent i = new Intent(AdminPsychActivity.this, ShowActivity.class);
-                i.putExtra(Constant.USER_NAME, user2.name2);
-                i.putExtra(Constant.USER_SEC_NAME, user2.sec_name2);
-                i.putExtra(Constant.USER_EMAIL, user2.email2);
+                Intent i = new Intent(AdminPsychActivity.this, AdminPsychShowActivity.class);
+                i.putExtra(ConstantPsych.PSYCH_NAME, psych.name);
+                i.putExtra(ConstantPsych.PSYCH_SEC_NAME, psych.sec_name);
+                i.putExtra(ConstantPsych.PSYCH_THIRD_NAME, psych.third_name);
+                i.putExtra(ConstantPsych.PSYCH_EDUCATION, psych.education);
+                i.putExtra(ConstantPsych.PSYCH_EMAIL, psych.email);
+                i.putExtra(ConstantPsych.PSYCH_PASSWORD, psych.password);
                 startActivity(i);
             }
         });

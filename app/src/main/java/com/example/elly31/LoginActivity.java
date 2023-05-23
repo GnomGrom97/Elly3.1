@@ -14,6 +14,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private Button bStart, btnSignUp, btnSignIn, bSignOut,btnChoice;
     private TextView tvUserName;
+    private ImageView ImageBrain;
     private EditText edLogin, edPassword1;
 
     @Override
@@ -55,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSignUp=findViewById(R.id.btnSignUp);
         bSignOut=findViewById(R.id.bSignOut);
         btnChoice=findViewById(R.id.btnChoice);
+        ImageBrain=findViewById(R.id.ImageBrain);
 
 
     }
@@ -134,9 +137,9 @@ public class LoginActivity extends AppCompatActivity {
         if(user.isEmailVerified()) { //запускается при подтверждении почты
             String userName = "Вы вошли как:" + user.getEmail();
             tvUserName.setText(userName);
+            ImageBrain.setVisibility(View.GONE);
 
             btnChoice.setVisibility(View.VISIBLE);
-
             bSignOut.setVisibility(View.VISIBLE);
             bStart.setVisibility(View.VISIBLE);
             tvUserName.setVisibility(View.VISIBLE);
@@ -160,6 +163,8 @@ public class LoginActivity extends AppCompatActivity {
         bSignOut.setVisibility(View.GONE);
         btnChoice.setVisibility(View.GONE);
 
+        ImageBrain.setVisibility(View.VISIBLE);
+
     }
     public  void onClickSignOut(View view) {
         FirebaseAuth.getInstance().signOut();
@@ -171,6 +176,8 @@ public class LoginActivity extends AppCompatActivity {
         btnSignUp.setVisibility(View.VISIBLE);
         bSignOut.setVisibility(View.GONE);
         btnChoice.setVisibility(View.GONE);
+
+        ImageBrain.setVisibility(View.VISIBLE);
     }
     public void onClickChoice(View view){
         Intent intent = new Intent(LoginActivity.this, ChoiceActivity.class);

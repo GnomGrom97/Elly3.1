@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.Continuation;
@@ -47,7 +48,7 @@ public class MainActivityPsych extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_psych);
-        //myDatabase = FirebaseDatabase.getInstance().getReference(PSYCH_KEY);
+
         init();
     }
 
@@ -62,8 +63,8 @@ public class MainActivityPsych extends AppCompatActivity {
         saveBt = findViewById(R.id.saveBt);
         SpecializaionBtn = findViewById(R.id.SpecializaionBtn);
         myDatabase = FirebaseDatabase.getInstance().getReference(PSYCH_KEY);
-        ImImage = findViewById(R.id.ImImage);
         //загрузка файлов в папку бд
+        ImImage = findViewById(R.id.ImImage);
         storageRef = FirebaseStorage.getInstance().getReference("ImageDB");
     }
 
@@ -75,6 +76,9 @@ public class MainActivityPsych extends AppCompatActivity {
         String education = edEducation.getText().toString();
         String email = edEmail.getText().toString();//получение текста и превращение в строку
         String password = edPassword.getText().toString();
+        //добавил появление кнопок на экране прри нужном нажатии
+       // String specialization = + проверка на выбор специализации
+        //добавить переменную константу специализация, которую получаешь из специализации
         Psych newPsych = new Psych(id, name,sec_name, third_name,email,education,password);
         if      (!TextUtils.isEmpty(name) &&
                 !TextUtils.isEmpty(sec_name) &&

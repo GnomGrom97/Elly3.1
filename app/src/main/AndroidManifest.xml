@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".ChoiceActivity"
             android:exported="false" />
         <activity
@@ -40,7 +43,7 @@
             android:exported="false" /> <!-- поменял местами активити верхнюю и нижнюю -->
         <activity
             android:name=".AdminActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">

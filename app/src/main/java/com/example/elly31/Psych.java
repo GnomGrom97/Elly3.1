@@ -1,6 +1,7 @@
 package com.example.elly31;
 
 public class Psych {
+    //правила в firebase на серве
 
     public String id,name,sec_name,third_name,email,education,password;
     public Psych(){

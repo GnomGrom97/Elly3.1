@@ -24,7 +24,7 @@ public class ChoiceActivity extends AppCompatActivity {
     }
     //пока поставил новый юзер
     public void onClickAdmin(View view){
-       Intent intent = new Intent(ChoiceActivity.this,MainActivity2.class);
+       Intent intent = new Intent(ChoiceActivity.this,AdminLoginActivity.class);
        startActivity(intent);
     }
     public void onClickPsych(View view){

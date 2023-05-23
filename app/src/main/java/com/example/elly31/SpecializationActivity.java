@@ -12,8 +12,6 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.sql.Time;
-
 public class SpecializationActivity extends AppCompatActivity {
     /** активити с выбором специализации**/
 private Button button1,button2,button3,button4,button5,button6,button7,button8,button9,ReadyBtn;
@@ -33,12 +31,12 @@ private  String spec;
         button1=findViewById(R.id.button1);
         button2=findViewById(R.id.button2);
         button3=findViewById(R.id.button3);
-        button4=findViewById(R.id.button4);
-        button5=findViewById(R.id.button5);
-        button6=findViewById(R.id.button6);
-        button7=findViewById(R.id.button7);
-        button8=findViewById(R.id.button8);
-        button9=findViewById(R.id.button9);
+        button4=findViewById(R.id.message);
+        button5=findViewById(R.id.psyho);
+        button6=findViewById(R.id.clients);
+        button7=findViewById(R.id.settings);
+        button8=findViewById(R.id.exit);
+        button9=findViewById(R.id.Imessage);
         ReadyBtn=findViewById(R.id.ReadyBtn);
         //текст
         textView1=findViewById(R.id.textView1);

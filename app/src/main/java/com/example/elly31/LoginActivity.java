@@ -58,15 +58,13 @@ public class LoginActivity extends AppCompatActivity {
         bSignOut=findViewById(R.id.bSignOut);
         btnChoice=findViewById(R.id.btnChoice);
         ImageBrain=findViewById(R.id.ImageBrain);
-
-
     }
-
     @Override
     public void  onStart() {
         super.onStart();
         FirebaseUser cUser = mAuth.getCurrentUser();
         if (cUser != null) {//если пользователь вошел
+            //здесь нужно сделать разделение на запуск активити в зависимости от вошедшего пользователя
             ShowSignet();
               String userName = "Вы вошли как:" + cUser.getEmail();
              tvUserName.setText(userName);
@@ -76,7 +74,6 @@ public class LoginActivity extends AppCompatActivity {
              notSignet();
             Toast.makeText(this, "Пользователей нет ", Toast.LENGTH_SHORT).show();
         }
-
     }
     /**регистрация**/
     public void OnClickSignUp(View view) {
@@ -181,6 +178,10 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void onClickChoice(View view){
         Intent intent = new Intent(LoginActivity.this, ChoiceActivity.class);
+        startActivity(intent);
+    }
+    public  void OnClickSignUp2(View view){
+        Intent intent = new Intent(LoginActivity.this,ChoiceActivity.class);
         startActivity(intent);
     }
     /**Подтверждение почты*/

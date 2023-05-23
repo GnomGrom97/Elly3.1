@@ -63,7 +63,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/round_back_white30"
-        android:onClick="OnClickSignUp"
+        android:onClick="OnClickSignUp2"
         android:text="Зарегистрироваться"
         android:textColor="#787373"
         android:visibility="visible"
@@ -138,8 +138,10 @@
         android:layout_height="182dp"
         app:layout_constraintBottom_toTopOf="@+id/edLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
         app:srcCompat="@drawable/brain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

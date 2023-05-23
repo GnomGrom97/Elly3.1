@@ -14,6 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity2 extends AppCompatActivity {
     private EditText edName, edSecName, edEmail;
     private DatabaseReference myDataBase;
+    //регистрация для админа -фактически не нужна
     private String PSY_KEY = "ADMIN";//значение в скобках отвечает за наименование доступа
 
     @Override

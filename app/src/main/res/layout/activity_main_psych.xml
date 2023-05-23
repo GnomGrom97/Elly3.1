@@ -22,17 +22,17 @@
         app:layout_constraintTop_toBottomOf="@+id/edEmail" />
 
     <EditText
-android:id="@+id/edEmail"
-android:layout_width="332dp"
-android:layout_height="70dp"
-android:ems="10"
-android:hint="Почта"
+        android:id="@+id/edEmail"
+        android:layout_width="332dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="Почта"
         android:textColor="@color/black"
-android:inputType="textPersonName"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintHorizontal_bias="0.493"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/edEducation" />
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEducation" />
 
     <Button
         android:id="@+id/saveBt"

@@ -58,6 +58,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="204dp"
         android:text="Клиенты"
+        android:onClick="onClickClients"
         android:textColor="#787373"
         android:background="@drawable/round_back_white30"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,6 +72,7 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:background="@drawable/round_back_white30"
+        android:onClick="onClickAdminPsych"
         android:text="Психологи"
         android:textColor="#787373"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,10 +111,10 @@
         app:layout_constraintVertical_bias="0.117" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAdminName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать"
+        android:hint="Привет БРОО"
         android:textColor="#787373"
         app:layout_constraintBottom_toTopOf="@+id/message"
         app:layout_constraintEnd_toEndOf="parent"

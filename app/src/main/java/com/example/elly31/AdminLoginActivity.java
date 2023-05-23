@@ -37,7 +37,7 @@ public class AdminLoginActivity extends AppCompatActivity {
         btnSignIn =findViewById(R.id.btnSignIn);
         ImageBrain=findViewById(R.id.imageBrain);
         mAuth = FirebaseAuth.getInstance();
-        textView=findViewById(R.id.textView);
+        textView=findViewById(R.id.tvAdminName);
     }
     /**авторизауия**/
     public  void  OnClickSignIn(View view)

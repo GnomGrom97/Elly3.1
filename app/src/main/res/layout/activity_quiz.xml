@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@drawable/round_back_login"
     tools:context=".QuizActivity">
 <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="60dp"
-    android:background="#1F6BB8">
+    android:background="#e09fb2">
 
     <ImageView
         android:id="@+id/backBtn"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Selected Topic Name"
-        android:textColor="@color/black"
+        android:textColor="#787373"
         android:textSize="18sp"
         android:textStyle="bold" />
     <LinearLayout
@@ -49,7 +49,7 @@
     android:layout_height="wrap_content"
     android:text="00:59"
     android:layout_marginEnd="5dp"
-    android:textColor="@color/white">
+    android:textColor="@color/black">
 
 </TextView>
 
@@ -68,7 +68,7 @@
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:text="1/10"
-        android:textColor="@color/teal_700" />
+        android:textColor="#787373" />
 
     <TextView
         android:id="@+id/question"
@@ -77,23 +77,25 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_light_yellow10"
+        android:background="@drawable/round_back_white30"
         android:gravity="center"
         android:minHeight="100dp"
         android:padding="20dp"
         android:text="Question will be here"
-        android:textColor="@color/black"
+        android:textColor="#787373"
         android:textSize="18sp" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/option1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:text="OPTION1"
         android:layout_marginEnd="20dp"
-        android:textColor="#1F6BB8"
-        android:background="@drawable/round_back_white_stroke2_10"/>
+        android:background="@drawable/round_back_white30"
+        android:text="OPTION1"
+        android:textColor="#787373" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/option2"
         android:layout_width="match_parent"
@@ -102,8 +104,8 @@
         android:layout_marginTop="20dp"
         android:text="OPTION2"
         android:layout_marginEnd="20dp"
-        android:textColor="#1F6BB8"
-        android:background="@drawable/round_back_white_stroke2_10"/>
+        android:textColor="#787373"
+        android:background="@drawable/round_back_white30"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/option3"
         android:layout_width="match_parent"
@@ -112,8 +114,8 @@
         android:layout_marginTop="20dp"
         android:text="OPTION3"
         android:layout_marginEnd="20dp"
-        android:textColor="#1F6BB8"
-        android:background="@drawable/round_back_white_stroke2_10"/>
+        android:textColor="#787373"
+        android:background="@drawable/round_back_white30"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/option4"
         android:layout_width="match_parent"
@@ -122,8 +124,8 @@
         android:layout_marginTop="20dp"
         android:text="OPTION4"
         android:layout_marginEnd="20dp"
-        android:textColor="#1F6BB8"
-        android:background="@drawable/round_back_white_stroke2_10"/>
+        android:textColor="#787373"
+        android:background="@drawable/round_back_white30"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/nextBtn"
         android:layout_width="match_parent"
@@ -132,7 +134,7 @@
         android:layout_marginTop="90dp"
         android:text="Следующий вопрос"
         android:layout_marginEnd="20dp"
-        android:textColor="#1F6BB8"
-        android:background="@drawable/round_back_green_30"/>
+        android:textColor="#787373"
+        android:background="@drawable/round_back_white30"/>
 
 </LinearLayout>

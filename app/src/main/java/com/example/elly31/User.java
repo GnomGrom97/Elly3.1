@@ -1,7 +1,7 @@
 package com.example.elly31;
 
 public class User {
-    public String id3,name3,sec_name3;
+    public String id3,name3,sec_name3,email3;
 
     public User() {
     }
@@ -13,6 +13,4 @@ public class User {
         this.email3 = email3;
     }
 
-
-    public String email3; //важно писать паблик
 }

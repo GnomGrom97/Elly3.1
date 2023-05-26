@@ -49,6 +49,8 @@ public class AdminActivity extends AppCompatActivity {
         Intent intent =new Intent(AdminActivity.this,AdminPsychActivity.class);
         startActivity(intent);
     }
+    public void onClickSignOut (View view){}
+    public  void onClickSettings(View view){}
     @Override
     public void  onStart() {
         super.onStart();

@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
+/**Активити с регистрацией пользователя*/
 public class MainActivity extends AppCompatActivity {
     //используется myDataBase
     private DatabaseReference myDataBase;
@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         String id2 = myDataBase.getKey();//получение порядкового номера пользователя из
         String name2 = edName2.getText().toString();
         String sec_name2 = edSecName.getText().toString();
+        //здесь нужно добавить регистрацию по номеру телефона для пользователя
+        //с передачейй данных на сервер
         String email2 = edEmail2.getText().toString();
         User2 newUser = new User2(id2, name2, sec_name2, email2); //создание пользователя с атрибутами в ()
         if     (!TextUtils.isEmpty(name2) &&
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 !TextUtils.isEmpty(email2)){
 
         myDataBase.push().setValue(newUser);//отправить информацию о бд -создание пользователя
-        Toast.makeText(this, "Пользователь успешно добавлен", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Ожидайте кода с для подтверждения регистрации", Toast.LENGTH_SHORT).show();
         } else {//выдает сообщение о пустом поле
             Toast.makeText(this, "Пустое поле", Toast.LENGTH_SHORT).show();
     }

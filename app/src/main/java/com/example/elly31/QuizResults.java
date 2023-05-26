@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 public class QuizResults extends AppCompatActivity {
+    /**Cуда необходимо добавить формулу по опроснику, но сначала получение резултатов ответов с открытием пояснения в новой актив
+     * А ТАК ЖЕ ВОЗВАТ НА ГЛАВНЫЙ ЭКРАН ПО КНОПКЕ И ТД */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

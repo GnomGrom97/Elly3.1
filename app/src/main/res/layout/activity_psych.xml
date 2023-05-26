@@ -29,6 +29,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/round_back_white30"
+        android:onClick="onClickSignOut"
         android:text="Выйти"
         android:textColor="#787373"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,35 +43,38 @@
         android:id="@+id/settings"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:background="@drawable/round_back_white30"
+        android:onClick="onClickSettings"
         android:text="Настройка"
         android:textColor="#787373"
-        android:background="@drawable/round_back_white30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clients"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintTop_toBottomOf="@+id/quizList"
+        app:layout_constraintVertical_bias="0.145" />
 
     <Button
-        android:id="@+id/clients"
+        android:id="@+id/quizList"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginBottom="204dp"
+        android:background="@drawable/round_back_white30"
+        android:onClick="onClickQuizList"
         android:text="Опросы"
         android:textColor="#787373"
-        android:background="@drawable/round_back_white30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/psyho" />
+        app:layout_constraintTop_toBottomOf="@+id/posters" />
 
     <Button
-        android:id="@+id/psyho"
+        android:id="@+id/posters"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:background="@drawable/round_back_white30"
+        android:onClick="onClickPosters"
         android:text="Объявления"
         android:textColor="#787373"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,7 +85,7 @@
         app:layout_constraintVertical_bias="0.09" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
+        android:id="@+id/PsychImage"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/round_back_white_round"
@@ -98,17 +102,18 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:background="@drawable/round_back_white30"
+        android:onClick="onClickPsychMessages"
         android:text="Входящие"
         android:textColor="#787373"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+        app:layout_constraintTop_toBottomOf="@+id/PsychImage"
         app:layout_constraintVertical_bias="0.117" />
 
     <TextView
-        android:id="@+id/tvAdminName"
+        android:id="@+id/tvPsychName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Добро пожаловать"
@@ -117,5 +122,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/PsychImage" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,6 +18,15 @@
             android:name=".AdminPsychActivity"
             android:exported="false" />
         <activity
+            android:name=".QuizMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizResults"
+            android:exported="false" />
+        <activity
             android:name=".AdminLoginActivity"
             android:exported="false" />
         <activity

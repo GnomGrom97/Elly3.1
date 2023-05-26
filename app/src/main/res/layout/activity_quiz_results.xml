@@ -2,33 +2,39 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/desk"
+    android:background="@drawable/round_back_login"
     android:layout_height="match_parent"
     tools:context=".QuizResults">
 
-     <ImageView
+    <ImageView
         android:id="@+id/congratilationIcon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="236dp"
+        android:layout_height="245dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="81dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/congrat" />
+        android:src="@drawable/brain" />
 
     <TextView
         android:id="@+id/successTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_below="@+id/congratilationIcon"
+        android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="51dp"
         android:layout_marginEnd="10dp"
         android:gravity="center"
-        android:layout_below="@+id/congratilationIcon"
         android:text="Ваш результат:"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="22sp"/>
-<LinearLayout
+        android:textColor="#787373"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
     android:layout_below="@+id/successTextView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -53,15 +59,18 @@
         android:textStyle="bold"
         android:textColor="#DD2C00"/>
 </LinearLayout>
-<androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/startNewQuizBtn"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:text="Начать новую викторину"
-    android:layout_alignParentBottom="true"
-    android:layout_margin="30dp"
-    android:textColor="@color/black"
-    android:background="@drawable/round_back_green_30"
 
-/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startNewQuizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_back_white30"
+        android:text="Начать новую викторину"
+        android:textColor="#787373" />
 </RelativeLayout>

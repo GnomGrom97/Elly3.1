@@ -73,7 +73,7 @@ public class QuizActivity extends AppCompatActivity {
 
         final String getSelectedTopic = getIntent().getStringExtra("selectedTopic");
         selectedTopicName.setText(getSelectedTopic);//получение названия викторины сверху из имени
-        questionsList = QuestionsBank.getQuestions(getSelectedTopic);//получение вопросов  из бана
+        questionsList = QuestionsBank.getQuestions(getSelectedTopic);//получение вопросов  из банка
         StartTimer(timer);//запуск таймера
         //получение текста из переменных
         questions.setText((currentQuestionPosition + 1) + "/" + questionsList.size());//получение текста

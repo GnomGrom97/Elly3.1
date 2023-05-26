@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private Button bStart, btnSignUp, btnSignIn, bSignOut,btnChoice;
+    private Button bStart, btnSignUp, btnSignIn, bSignOut,btnChoice,btnQuiz;
     private TextView tvUserName;
     private ImageView ImageBrain;
     private EditText edLogin, edPassword1;
@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         bSignOut=findViewById(R.id.bSignOut);
         btnChoice=findViewById(R.id.btnChoice);
         ImageBrain=findViewById(R.id.ImageBrain);
+        btnQuiz=findViewById(R.id.btnQuiz);
     }
     @Override
     public void  onStart() {
@@ -144,6 +145,7 @@ public class LoginActivity extends AppCompatActivity {
             edPassword1.setVisibility(View.GONE);
             btnSignUp.setVisibility(View.GONE);
             btnSignIn.setVisibility(View.GONE);
+            btnQuiz.setVisibility(View.GONE);
         }
         else {
             Toast.makeText( getApplicationContext(), "Проверьте вашу почту для подтвердения Email-адреса", Toast.LENGTH_SHORT).show();
@@ -159,7 +161,7 @@ public class LoginActivity extends AppCompatActivity {
         tvUserName.setVisibility(View.GONE);
         bSignOut.setVisibility(View.GONE);
         btnChoice.setVisibility(View.GONE);
-
+        btnQuiz.setVisibility(View.VISIBLE);
         ImageBrain.setVisibility(View.VISIBLE);
 
     }
@@ -173,11 +175,16 @@ public class LoginActivity extends AppCompatActivity {
         btnSignUp.setVisibility(View.VISIBLE);
         bSignOut.setVisibility(View.GONE);
         btnChoice.setVisibility(View.GONE);
-
+        btnQuiz.setVisibility(View.VISIBLE);
         ImageBrain.setVisibility(View.VISIBLE);
     }
     public void onClickChoice(View view){
         Intent intent = new Intent(LoginActivity.this, ChoiceActivity.class);
+        startActivity(intent);
+    }
+    /** Активити для запуска опросника*/
+    public void onClickQuiz(View view){
+        Intent intent = new Intent(LoginActivity.this,QuizMainActivity.class);
         startActivity(intent);
     }
     public  void OnClickSignUp2(View view){
